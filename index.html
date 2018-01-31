@@ -2,12 +2,105 @@
 <html>
 <head>
 	<title>Train Scheduler</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 	<!-- Add a JumboTron -->
-	<!-- Add a Table --> 
+	 <div class="row">
+        <div class="column padding-reset">
+            <div class="ui huge message page grid">
+                <h1 class="ui huge header">Train Scheduler</h1>
+                <p>This will display a schedule of trains to the user and allow a user to create a new train and schedule.</p>
+                <br><br>
+                <!-- <a class="ui blue button">Learn more »</a> -->
+            </div>
+        </div>
+    </div>
+	<br>
+	<br>
+	<!-- Add a Form -->
+	<div class="ui grid">
+	  	<div class="two wide column">
+	  	</div>
+	  	<div class="twelve wide column">
+			<div class="ui centered segment">
+		  		<div class="content">
+		    		<h2 class="ui large header">Train Schedules</h2>
+		    		<hr>
+		    	</div>
+		    	<div class="content">
+		    		<!-- Add a Table -->
+		    		<table class="ui celled table">
+					  <thead>
+					    <tr>
+					      <th>Name</th>
+					      <th>Status</th>
+					      <th>Notes</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td>Jamie</td>
+					      <td>Approved</td>
+					      <td>Requires call</td>
+					    </tr>
+					    <tr>
+					      <td>John</td>
+					      <td>Selected</td>
+					      <td>None</td>
+					    </tr>
+					    <tr>
+					      <td>Jamie</td>
+					      <td>Approved</td>
+					      <td>Requires call</td>
+					    </tr>
+					    <tr>
+					      <td>Jill</td>
+					      <td>Approved</td>
+					      <td>None</td>
+					    </tr>
+					  </tbody>
+					</table>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- Add a Table -->
+	<div class="ui grid">
+	  	<div class="two wide column">
+	  	</div>
+	  	<div class="twelve wide column">
+			<div class="ui centered segment">
+		  		<div class="content">
+		    		<h2 class="ui large header">Enter A New Train Schedule</h2>
+		    		<hr>
+		    	</div>
+		    	<div class="content">
+		    		<!-- Add a Table -->
+		    		<form class="ui form">
+					  <div class="field">
+					    <label>First Name</label>
+					    <input type="text" name="first-name" placeholder="First Name">
+					  </div>
+					  <div class="field">
+					    <label>Last Name</label>
+					    <input type="text" name="last-name" placeholder="Last Name">
+					  </div>
+					  <div class="field">
+					    
+					  </div>
+					  <button class="ui button" type="submit">Submit</button>
+					</form>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	 
 	<!-- Add a Form --> 
-	<script type="text/javascript" src="app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>

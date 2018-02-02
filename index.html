@@ -19,53 +19,6 @@
     </div>
 	<br>
 	<br>
-	<!-- Add a Form -->
-	<div class="ui grid">
-	  	<div class="two wide column">
-	  	</div>
-	  	<div class="twelve wide column">
-			<div class="ui centered segment">
-		  		<div class="content">
-		    		<h2 class="ui large header">Train Schedules</h2>
-		    		<hr>
-		    	</div>
-		    	<div class="content">
-		    		<!-- Add a Table -->
-		    		<table class="ui celled table">
-					  <thead>
-					    <tr>
-					      <th>Name</th>
-					      <th>Status</th>
-					      <th>Notes</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					      <td>Jamie</td>
-					      <td>Approved</td>
-					      <td>Requires call</td>
-					    </tr>
-					    <tr>
-					      <td>John</td>
-					      <td>Selected</td>
-					      <td>None</td>
-					    </tr>
-					    <tr>
-					      <td>Jamie</td>
-					      <td>Approved</td>
-					      <td>Requires call</td>
-					    </tr>
-					    <tr>
-					      <td>Jill</td>
-					      <td>Approved</td>
-					      <td>None</td>
-					    </tr>
-					  </tbody>
-					</table>
-		    	</div>
-		    </div>
-		</div>
-	</div>
 
 	<!-- Add a Table -->
 	<div class="ui grid">
@@ -81,26 +34,63 @@
 		    		<!-- Add a Table -->
 		    		<form class="ui form">
 					  <div class="field">
-					    <label>First Name</label>
-					    <input type="text" name="first-name" placeholder="First Name">
+					    <label for="train-name">Train Name</label>
+					    <input type="text" id="train-name" placeholder="Train Name">
 					  </div>
 					  <div class="field">
-					    <label>Last Name</label>
-					    <input type="text" name="last-name" placeholder="Last Name">
+					    <label for="last-name">Departure Station</label>
+					    <input type="text" id="departure-station" placeholder="Departure Station">
 					  </div>
 					  <div class="field">
-					    
+					    <label for="arrival-station">Arrival Station</label>
+					    <input type="text" id="arrival-station" placeholder="Arrival Station">
 					  </div>
-					  <button class="ui button" type="submit">Submit</button>
+					  <div class="field">
+					    <label for="frequency">Frequency (in minutes):</label>
+					    <input type="text" id="frequency" placeholder="0">
+					  </div>					  
+					  <button class="ui button" type="submit" id="submit-button">Submit</button>
 					</form>
 		    	</div>
 		    </div>
 		</div>
 	</div>
+
+	<!-- Add a Form -->
+	<div class="ui grid">
+	  	<div class="two wide column">
+	  	</div>
+	  	<div class="twelve wide column">
+			<div class="ui centered segment">
+		  		<div class="content">
+		    		<h2 class="ui large header">Train Schedules</h2>
+		    		<hr>
+		    	</div>
+		    	<div class="content">
+		    		<!-- Add a Table -->
+		    		<table class="ui celled table">
+					  <thead>
+					    <tr>
+					      <th>Train Name</th>
+					      <th>Departure Station</th>
+					      <th>Arriaval Station</th>
+					      <th>Frequency</th>
+					      <th>Next Arrival</th>
+					      <th>Minutes Away</th>
+					    </tr> 
+					  </thead>
+					  <tbody id="schedule-table">
+					   
+					  </tbody> 
+					</table>
+		    	</div>
+		    </div>
+		</div>
+	</div>
 	 
-	<!-- Add a Form --> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
